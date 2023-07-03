@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+form{
+    width: 100%;
+}
+header{
+    background-color: #2874f0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    position: relative;
+    top: 2px;
+}
+.logo img{
+    width: 100%;
+}
+.explore{
+    width: 80px;  
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    /* justify-content: center; */
+    align-content: flex-start;
+    position: relative;
+    top: -2px;
+    height: 100%;
+}
+.explore a{
+    display: flex;
+}
+.explore a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+.explore p{
+    margin: 0;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500px;
+    color: rgb(238, 227, 227);
+}
+.explore img{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+.Plus-icon{
+    color:#ffe500;
+}
+/* Search Container */
+.search_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    width: 420px;
+    height: 38px;
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 1.5px;
+    padding: 0px 15px;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.search_container i{
+    color: #2874f0;
+}
+.search_container input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.recent_search{
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 100%;
+    top: 35px;
+    margin-left: -15px;
+    border-top: 1px solid #ccc;
+    display: none;
+    padding: 15px;
+    z-index: 10;
+}
+.search_container:focus-within .recent_search{
+    display: block;
+}
+.recent_list{
+    display: flex;
+    padding: 5px 0px;
+}
+.recent_list i{
+    color: #7a7a7a;
+    font-size: 14px;
+}
+.recent_list p{
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+/* loginBtn_container */
+.loginBtn_container{
+    background-color: white;
+    padding: 7px 40px;
+    font-size: 18px;
+    border-radius: 1.5px;
+    margin: 0px 10px;
+    position: relative;
+}
+.loginBtn_container a{
+    color: #2874f0;
+    font-weight: 500px;
+    text-decoration: none;
+}
+.login_menu{
+    position: absolute;
+    top: 35px;
+    height: 350px;
+    width: 100%;
+    width: 230px;
+    background-color: transparent;
+    margin-left: -40px;
+    transform: translateX(-25%);
+    display: none;
+    padding-top: 15px;
+} 
+.login_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 110px;
+    top: 1px;
+    border-top: 2px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+}
+.loginBtn_container:hover .login_menu{
+    display: block;
+}
+.login_menu_list{
+    height: 100%;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    padding: 5px 18px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: oblique; */
+}
+.login_menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.login_menu_top a:hover{
+    text-decoration: underline;
+}
+.menu_nav_link a{
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.menu_nav_link a p{
+    padding-left: 10px;
+    color: rgb(81, 80, 80);
+}
+.menu_nav_icon{
+    width: 20px;
+}
+.menu_nav_icon{
+    width: px;
+}
+/*Become a Seller*/
+.nav-link{
+    padding: 0px 15px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(238, 227, 227);
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.more_link{
+    padding: 0px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(238, 227, 227);
+}
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.2s;
+}
+.more_link:hover .icon_more{
+    transform: rotate(-180deg);
+}
+
+.card_link{
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(238, 227, 227);
+    margin: 0px 10px;
+}
+.card_link p{
+    padding: 0px 5px;
+}
