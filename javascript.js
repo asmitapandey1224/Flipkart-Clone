@@ -130,6 +130,7 @@ electronicProductData.forEach(el => {
     <p class="bestofElectronic_name">${el.discount}
     </p>
     <p class="brand">${el.brand}</p>
+    <p class="
   </div>
 </div>
   `

@@ -49,8 +49,6 @@ header{
 }
 .explore a:hover{
     text-decoration: underline;
-    /* cursor: pointer;
-    color: white; */
 }
 .explore p{
     margin: 0;
@@ -429,6 +427,16 @@ header{
     /* justify-content: center; */
     align-items: center;
 }
+.bestofElectronic_Product_item{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+  
+.bestofElectronic_Product_item::-webkit-scrollbar{
+    display: none; /*Hide scrollbar*/
+}
 .viewAllBtn{
     background-color: #2874f0;
     color: #f1f3f6;
@@ -457,12 +465,13 @@ header{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
 }
 .bestofElectronic_image_product img{
     margin-top: 10px;
-    max-height: 190px;
-    width: 90%;
+    max-height: 150px;
+    width: 100%;
+    height: 90%;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,9 +498,4 @@ header{
 .brand{
     color: #666565;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.bestofElectronic_Product_item{
-    display: flex;
-    overflow: hidden;
 }
