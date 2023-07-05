@@ -410,7 +410,7 @@ header{
     background-color: #2874f0;
     position: absolute;
     bottom: 0;
-    /* text-align: center; */
+    text-align: center;
 }
 .bestofElectronic_moreOpt img{
     height: 100%;
@@ -428,15 +428,15 @@ header{
     align-items: center;
 }
 .bestofElectronic_Product_item{
-    display: flex;
+     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
   
 .bestofElectronic_Product_item::-webkit-scrollbar{
     display: none; /*Hide scrollbar*/
-}
+} 
 .viewAllBtn{
     background-color: #2874f0;
     color: #f1f3f6;
@@ -457,21 +457,29 @@ header{
     display: flex;
 }
 .bestofElectronic_image_product{
-    height: max-content;
+    height: 210px;
+    text-align: center;
     padding: 15px;
     /* margin-top: auto; */
-    max-width: 200px;
+    /* max-width: 200px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding: 10px;
 }
 .bestofElectronic_image_product img{
-    margin-top: 10px;
+    /* margin-top: 10px;
     max-height: 150px;
     width: 100%;
     height: 90%;
     background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    width: 90%;
+    max-height: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,6 +496,7 @@ header{
     color: #3c3b3b;
     font-size: 15px;
     letter-spacing: none;
+    padding: 5px;
 }
 .bestofElectronic_name{
     font-size: 16px;
@@ -495,7 +504,8 @@ header{
     letter-spacing: 0.1px;
     padding: 5px;
 }
-.brand{
+.bestofElectronic_brand{
     color: #666565;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 7px;
 }
