@@ -116,14 +116,17 @@ setInterval(renderimageSlider, 3000)
 
 /********************bestofElectronic_Product_item**********************/
 let bestofElectronic_Product_itemEl = document.querySelector(".bestofElectronic_Product_item")
-let bestofElectronic_Product_html = ""
+let bestofElectronic_Product_html = ''
 
-console.log(electronicProductData)
+// console.log(electronicProductData)
+
 electronicProductData.forEach(el => {
   bestofElectronic_Product_html += `
   <div class="bestofElectronic_item">
   <div class="bestofElectronic_image_product">
-    <img src="${el.img}"/>
+  <a href="${el.link}">
+            <img src="${el.img}"/>
+  </a>
   </div>
   <div class="bestofElectronic_moreOpt_product">
     <p><h3>${el.name}</h3></p>
